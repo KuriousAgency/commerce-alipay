@@ -1,0 +1,28 @@
+{% from "_includes/forms" import textField, lightswitchField, autosuggestField %}
+
+{{ autosuggestField({
+    label: 'Partner'|t('commerce'),
+    id: 'partner',
+    class: 'ltr',
+    name: 'partner',
+    suggestEnvVars: true,
+    value: gateway.partner,
+    errors: gateway.getErrors('partner')
+}) }}
+
+{{ autosuggestField({
+    label: 'Key'|t('commerce'),
+    id: 'key',
+    class: 'ltr',
+    name: 'key',
+    suggestEnvVars: true,
+    value: gateway.key,
+    errors: gateway.getErrors('key')
+}) }}
+
+{{ lightswitchField({
+    label: "Test mode?"|t('commerce'),
+    name: 'testMode',
+    on: gateway.testMode,
+    errors: gateway.getErrors('testMode'),
+ }) }}
