@@ -1,43 +1,32 @@
-# Commerce Alipay plugin for Craft CMS 3.x
+<p align="center"><img src="./resources/img/alipay-logo.png" alt="Alipay logo"></p>
 
-Alipay integration for Craft Commerce
+<h1 align="center">Alipay for Craft Commerce</h1>
 
-![Screenshot](resources/img/plugin-logo.png)
-
-## Requirements
-
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin provides a [Alipay](https://intl.alipay.com/) integration for [Craft Commerce](https://craftcms.com/commerce).
 
 ## Installation
 
-To install the plugin, follow these instructions.
+You can install this plugin from the Plugin Store or with Composer.
 
-1.  Open your terminal and go to your Craft project:
+#### From the Plugin Store
 
-        cd /path/to/project
+Go to the Plugin Store in your project’s Control Panel and search for Alipay for Craft Commerce”. Then click on the “Install” button in its modal window.
 
-2.  Then tell Composer to load the plugin:
+#### With Composer
 
-        composer require KuriousAgency/commerce-alipay
+Open your terminal and run the following commands:
 
-3.  In the Control Panel, go to Settings → Plugins and click the “Install” button for Commerce Alipay.
+```bash
+# go to the project directory
+cd /path/to/my-project
 
-## Commerce Alipay Overview
+# tell Composer to load the plugin
+composer require kuriousagency/commerce-alipay
 
--Insert text here-
+# tell Craft to install the plugin
+./craft install/plugin commerce-alipay
+```
 
-## Configuring Commerce Alipay
+## Setup
 
--Insert text here-
-
-## Using Commerce Alipay
-
--Insert text here-
-
-## Commerce Alipay Roadmap
-
-Some things to do, and ideas for potential features:
-
--   Release it
-
-Brought to you by [Kurious Agency](https://kurious.agency)
+To add the Alipay payment gateway, go to Commerce → Settings → Gateways, create a new gateway, and set the gateway type to Alipay.
